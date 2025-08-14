@@ -1,0 +1,56 @@
+# Git attributes for AI Article Generator
+
+# Ensure line endings are consistent
+* text=auto
+
+# Specific file types
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Environment files
+.env* text eol=lf
+
+# Docker files
+Dockerfile text eol=lf
+docker-compose.yml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Archive files
+*.tar binary
+*.gz binary
+*.zip binary
+*.rar binary
+
+# AI/ML model files (if any)
+*.model binary
+*.weights binary
+*.checkpoint binary
+
+# Large data files
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.json.gz filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+
+# Log files should not be tracked
+*.log text
+
+# Configuration files
+*.conf text eol=lf
+*.config text eol=lf
